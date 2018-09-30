@@ -81,7 +81,6 @@ export default {
   @media (min-width: 901px) {
     &:not(.expanded) {
       .featured-image-padding {
-        padding-top: 96px !important;
       }
     }
   }

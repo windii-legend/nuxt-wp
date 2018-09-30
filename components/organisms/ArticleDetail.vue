@@ -60,11 +60,12 @@ export default class extends Vue {
 @import '~assets/css/vars.scss';
 
 article {
-  background-color: #efefef;
+  background-color: #ffffff;
   display: flex;
   flex-direction: column;
   position: relative;
   height: 100%;
+  padding: 0 32px;
 
   &.page-enter-active .narrow {
     transition: transform 1s cubic-bezier(.11,.89,.31,.99), opacity 0.75s ease-out;
@@ -75,11 +76,10 @@ article {
   }
 
   .narrow {
-    background-color: #efefef;
+    background-color: #ffffff;
     margin: 0 auto;
     max-width: 842px;
     min-height: calc(100vh - 80px - 96px - 200px);
-    padding: 0 96px 96px 96px;
     position: relative;
     transition: min-height 1s, transform 1s;
     transform: translateY(0);
@@ -142,7 +142,7 @@ article {
   .meta {
     .title {
       font-size: 40px;
-      line-height: 1;
+      line-height: 1.3;
       margin-bottom: 16px;
       margin-top: 0;
       padding-top: 64px;
