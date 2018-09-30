@@ -60,17 +60,21 @@ body {
   flex-direction: column;
   overflow: hidden;
   padding-top: 80px;
+  justify-content: center;
+  background-color: #ffffff
 }
 
 main {
   background-color: white;
   margin: 0 auto;
-  max-width: $containerWidth;
+  /*max-width: $containerWidth;*/
+    max-width: 1000px;
   min-height: calc(100vh - 80px - 200px);
   width: 100%;
 
   @media (max-width: 700px) {
     min-height: calc(100vh - 60px - 200px);
+    padding-top: -40px;
   }
 }
 
@@ -117,6 +121,8 @@ a {
 
 .fancy {
   cursor: pointer;
+  color:#e03f3f!important;
+  font-weight:bold;
   
   &:hover {
     color: $accent;

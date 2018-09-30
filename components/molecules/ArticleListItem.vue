@@ -32,10 +32,12 @@ export default class ArticleListItem extends Vue {
 <style lang="scss" scoped>
 @import '~assets/css/vars.scss';
 
-  article + article {
-    border-top: 1px dotted lighten($primary, 20%);
+  article {
+    border: 1px solid #dcdcdc;
+    border-radius: 4px;
     margin-top: 32px;
-    padding-top: 32px;
+    box-shadow: 0 2px rgba(0,0,0,0.06);
+    padding: 10px 20px 15px 20px;
   }
 
   .row {
@@ -88,6 +90,7 @@ export default class ArticleListItem extends Vue {
 
   h2 {
     color: #111;
+    font-weight: bold;
     font-size: 1.2rem;
     margin-bottom: 8px;
     margin-top: -6px;

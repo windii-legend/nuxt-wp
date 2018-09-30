@@ -19,7 +19,6 @@ header
 
   div
     align-items: center
-    border-bottom: 1px solid #d8d8d8
     background-color: #fff
     display: flex
     height: 80px
@@ -27,6 +26,7 @@ header
     max-width: 100%
     padding: 0 32px
     transition: padding-top 0.5s, padding-bottom 0.5s
+    max-width: 1000px
     @media (max-width: 700px)
       height: 60px
       padding: 16px
@@ -35,10 +35,10 @@ header
     @media (max-width: 700px)
       margin-right: 16px
     h1
-      color: #666
+      color: #e03f3f
       cursor: pointer
       font-size: 1.1rem
-      font-weight: 400
+      font-weight: bold
   nav
     flex-shrink: 0
     @media (max-width: 500px)
@@ -56,8 +56,8 @@ header
       border-color: #555
       
     &.nuxt-link-active:not(.blog-title)
-      padding-bottom: 4px
-      border-bottom: 2px solid
+      padding-bottom: 6px
+      border-bottom: 1px solid #e03f3f
 
     & + a
       margin-left: 32px;
